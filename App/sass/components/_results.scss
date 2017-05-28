@@ -1,0 +1,33 @@
+.results {
+	width: 100%;
+
+	@include e('center') {
+		display: block;
+		margin : 0 auto;
+		width  : 735px;
+	}
+
+	@include e('group') {
+		border-right: 1px solid $light-gray;
+		float       : left;
+		padding     : 20px 40px;
+
+		@include m('last') {
+			border-right: none;
+		}
+	}
+
+	@include e('group-title') {
+		font-size: 16px;
+		margin   : 0 0 5px;
+	}
+
+	@include e('group-value') {
+		font-size: 16px;
+		margin   : 0;
+
+		span {
+			font-size: 35px;
+		}
+	}
+}

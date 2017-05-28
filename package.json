@@ -1,0 +1,39 @@
+{
+  "name": "teste-scup",
+  "version": "1.0.0",
+  "description": "Teste Scup",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-jest": "^16.0.0",
+    "babel-loader": "^6.2.7",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "enzyme": "^2.5.1",
+    "http": "0.0.0",
+    "jest-cli": "^16.0.2",
+    "jquery": "^3.1.1",
+    "jsdom": "^9.8.3",
+    "react-addons-test-utils": "^15.3.2",
+    "react-test-renderer": "^15.3.2",
+    "skin-deep": "^0.16.0",
+    "uglify-js": "^2.7.4",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "npm run build && webpack-dev-server",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Rafael Maruta <rafaelmaruta@gmail.com>",
+  "license": "MIT"
+}

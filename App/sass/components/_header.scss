@@ -1,0 +1,11 @@
+.header {
+	text-indent: -17000px;
+	width      : 100%;
+
+	@include e('logo') {
+		background: url(/img/logo-scup.gif) no-repeat;
+		display   : block;
+		height    : 84px;
+		margin    : 50px 0;
+	}
+}

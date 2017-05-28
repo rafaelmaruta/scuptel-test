@@ -1,0 +1,219 @@
+exports[`Component form rendering works 1`] = `
+<section
+  className="form">
+  <div
+    className="form__center center">
+    <p
+      className="form__title">
+      Comparar Planos
+    </p>
+    <form
+      className="form__plans">
+      <div
+        className="form__plans-group">
+        <p
+          className="form__plans-title">
+          Origem
+        </p>
+        <input
+          className="form__plans-input"
+          disabled="disabled"
+          min="0"
+          onClick=""
+          onKeyUp=""
+          placeholder="DDD"
+          type="text"
+          value="011" />
+        <a
+          className="form__plans-add"
+          href="javascript:void(0);"
+          onClick={[Function]}
+          refs="clickAdd">
+          +
+        </a>
+      </div>
+      <div
+        className="form__plans-group">
+        <p
+          className="form__plans-title">
+          Destino
+        </p>
+        <input
+          className="form__plans-input"
+          disabled="disabled"
+          min="0"
+          onClick=""
+          onKeyUp=""
+          placeholder="DDD"
+          type="text"
+          value="011" />
+        <a
+          className="form__plans-add"
+          href="javascript:void(0);"
+          onClick={[Function]}
+          refs="clickAdd">
+          +
+        </a>
+      </div>
+      <div
+        className="form__plans-group form__plans-group--last">
+        <p
+          className="form__plans-title">
+          Tempo (min)
+        </p>
+        <input
+          className="form__plans-input"
+          disabled=""
+          min="0"
+          onClick="10"
+          onKeyUp="10"
+          placeholder="MM"
+          type="number"
+          value={undefined} />
+      </div>
+    </form>
+  </div>
+</section>
+`;
+
+exports[`Component header rendering works 1`] = `
+<header
+  className="header">
+  <div
+    className="header__center center">
+    <a
+      className="header__logo"
+      href="#">
+      Teste Header
+    </a>
+  </div>
+</header>
+`;
+
+exports[`Component modal rendering works 1`] = `
+<section
+  className="modal show">
+  <div
+    className="modal__bg modal__bg--dark"
+    onClick={[Function]} />
+  <div
+    className="modal__popup">
+    <a
+      className="modal__popup-close"
+      href="javascript:void(0);"
+      onClick={[Function]}>
+      x
+    </a>
+    <table
+      className="modal__popup-table">
+      <tbody>
+        <tr
+          onClick={[Function]}>
+          <td>
+            011
+             - 
+            Test1
+          </td>
+        </tr>
+        <tr
+          onClick={[Function]}>
+          <td>
+            016
+             - 
+            Test2
+          </td>
+        </tr>
+        <tr
+          onClick={[Function]}>
+          <td>
+            017
+             - 
+            Test3
+          </td>
+        </tr>
+        <tr
+          onClick={[Function]}>
+          <td>
+            018
+             - 
+            Test4
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+`;
+
+exports[`Component results rendering works 1`] = `
+<section
+  className="results">
+  <div
+    className="results__center">
+    <div
+      className="results__group">
+      <p
+        className="results__group-title">
+        Test 30
+      </p>
+      <p
+        className="results__group-value">
+        R$
+        <span>
+          92
+        </span>
+        ,
+        07
+      </p>
+    </div>
+    <div
+      className="results__group">
+      <p
+        className="results__group-title">
+        Test 60
+      </p>
+      <p
+        className="results__group-value">
+        R$
+        <span>
+          2
+        </span>
+        ,
+        97
+      </p>
+    </div>
+    <div
+      className="results__group">
+      <p
+        className="results__group-title">
+        Test 120
+      </p>
+      <p
+        className="results__group-value">
+        R$
+        <span>
+          0
+        </span>
+        ,
+        00
+      </p>
+    </div>
+    <div
+      className="results__group results__group--last">
+      <p
+        className="results__group-title">
+        Normal
+      </p>
+      <p
+        className="results__group-value">
+        R$
+        <span>
+          164
+        </span>
+        ,
+        70
+      </p>
+    </div>
+  </div>
+</section>
+`;

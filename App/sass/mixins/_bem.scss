@@ -1,0 +1,72 @@
+// |------------------------------------------------------
+// |------------------------------------------------------
+// | BEM CSS - Block Element Modifier
+// |------------------------------------------------------
+// |------------------------------------------------------
+
+// Block Element
+// @param {String} $element - Element's name
+@mixin element($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+// @alias element
+@mixin e($element) {
+    @include element($element)  {
+        @content;
+    }
+}
+
+// Block Modifier
+// @param {String} $modifier - Modifier's name
+@mixin modifier($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+// @alias modifier
+@mixin m($modifier) {
+    @include modifier($modifier) {
+        @content;
+    }
+}
+
+/* 
+Usage:
+
+.block {
+    // CSS declarations for `.block` 
+
+    @include element('element') {
+        // CSS declarations for `.block__element` 
+    }
+
+    @include modifier('modifier') {
+        // CSS declarations for `.block--modifier` 
+
+        @include element('element') {
+            // CSS declarations for `.block--modifier__element` 
+        }
+    }
+}
+
+Or
+
+.block {
+    // CSS declarations for `.block` 
+
+    @include e('element') {
+        // CSS declarations for `.block__element` 
+    }
+
+    @include m('modifier') {
+        // CSS declarations for `.block--modifier` 
+
+        @include e('element') {
+            // CSS declarations for `.block--modifier__element` 
+        }
+    }
+}
+
+*/
